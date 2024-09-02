@@ -1,0 +1,101 @@
+* {
+	margin: 0px;
+	font-family: 'Figtree', sans-serif;
+	color: #111111;
+	line-height: 150%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+}
+
+main {
+	background-color: #f4d04e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.card {
+	max-width: 336px;
+	flex: 1 1 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	box-shadow: 8px 8px 0px 0px #000000;
+	border-radius: 20px;
+	padding: 24px;
+	border: 1px solid var(--color-gray-950, #111111);
+	background-color: #ffffff;
+}
+
+.card__info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.card__info--tag {
+	padding: 4px 12px;
+	background-color: #f4d04e;
+	border-radius: 4px;
+	font-weight: 800;
+	font-size: 14px;
+	width: fit-content;
+}
+
+.card__info--date {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.card__info--name {
+	font-weight: 800;
+	font-size: 24px;
+	transition: color 0.3s ease;
+}
+
+.card__info--name:hover {
+	color: #f4d04e;
+	cursor: pointer;
+}
+
+.card__info--description {
+	font-weight: 500;
+	font-size: 16px;
+	color: #6b6b6b;
+	line-height: 24px;
+}
+
+.card__image {
+	border-radius: 10px;
+	max-width: 100%;
+}
+
+.card__user {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.card__user--avatar {
+	width: 32px;
+	aspect-ratio: 1 / 1;
+}
+
+.card__user--name {
+	font-weight: 800;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	main {
+		padding: 0 16px;
+	}
+}
